@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'pages#home'
   get "about" => "pages#about" # crates about path
   get "contactus" => "pages#contactus" #creates contactus path
