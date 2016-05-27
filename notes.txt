@@ -1,5 +1,20 @@
 A resource is anything you can 
-	Create
-	Read
-	Update
+	Create = new + create
+	Read/Show
+	Read all = index
+	Update = edit + update
 	Destroy
+
+Acronym - "CRUD"
+
+Useful way to analyze a website--to see what their resources. 
+
+Ex. Twitter's Resources
+	Users
+	Tweet
+	Sessions
+
+Ex. Facebook's Resources
+	Users
+	Status Updates
+	Photos
