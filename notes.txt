@@ -1,0 +1,5 @@
+A resource is anything you can 
+	Create
+	Read
+	Update
+	Destroy
