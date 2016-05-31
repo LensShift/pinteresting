@@ -18,3 +18,16 @@ Ex. Facebook's Resources
 	Users
 	Status Updates
 	Photos
+
+
+Git stuff
+	git add --all
+	git commit -am "description"
+	git push
+
+Pushing to Heroku
+	git push heroku master
+	heroku run rake db:migrate
+
+rake db:rollback undos the previous rake db:migrate
+rake db:migrate:status shows all migrations
