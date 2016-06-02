@@ -31,3 +31,10 @@ Pushing to Heroku
 
 rake db:rollback undos the previous rake db:migrate
 rake db:migrate:status shows all migrations
+
+
+Links
+<%= link_to 'text here', where_the_link_is_going %>
+<%= link_to where_the_link_is_going do %>
+	<how you want the text to appear (maybe a glyphicon)>
+	<% end %>
