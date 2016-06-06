@@ -10775,3 +10775,697 @@ Processing by PinsController#show as HTML
   Rendered pins/show.html.erb within layouts/application (14.0ms)
   Rendered layouts/_header.html.erb (1.0ms)
 Completed 200 OK in 840ms (Views: 830.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-06 12:07:01 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (1.0ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (302.2ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+Completed 200 OK in 2690ms (Views: 2634.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/pins.self-6053f032528571333a42930d5dc13c9fde1b233492c86e86abc02d150db7e602.css?body=1" for ::1 at 2016-06-06 12:07:04 +0300
+
+
+Started GET "/assets/bootstrap_and_customization.self-7ff6fe85e27f659739db5e20c40a671db38da53d5d1d188744146682d79aebbe.css?body=1" for ::1 at 2016-06-06 12:07:04 +0300
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-06 12:07:04 +0300
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-06-06 12:07:04 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-06 12:07:05 +0300
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2016-06-06 12:07:05 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-06 12:07:05 +0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-06-06 12:07:05 +0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-06 12:07:05 +0300
+
+
+Started GET "/assets/pins.self-54e1d4bece446eaf41df0734b3bdda654f05d047f28e7bd08b22a4d623563854.js?body=1" for ::1 at 2016-06-06 12:07:05 +0300
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2016-06-06 12:07:05 +0300
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.self-c1d43d59c51c96f38689232f330c6de2816ec55a026ab1276dde2fbdf94b03d7.js?body=1" for ::1 at 2016-06-06 12:07:05 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-06-06 12:07:05 +0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2016-06-06 12:07:05 +0300
+
+
+Started GET "/pins/new" for ::1 at 2016-06-06 12:07:15 +0300
+Processing by PinsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.erb (192.1ms)
+  Rendered pins/new.html.erb within layouts/application (267.2ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 1086ms (Views: 1038.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/pins" for ::1 at 2016-06-06 12:08:00 +0300
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WsKA/WO2frvdTvczE+WPoU0My3o/OVg28Zi5kFQA6ssBVa7vahNoJATnZmOUzt0RNlhsDu1meQbaNW1SgYumPA==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x5658348 @tempfile=#<Tempfile:C:/Users/aparna/AppData/Local/Temp/RackMultipart20160606-3908-1kk3xos.jpg>, @original_filename="simpsons.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"simpsons.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"the simpson"}, "commit"=>"Create Pin"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/39b4fb4846c99c1d41a4e015da0b60bc20160606-3908-37f5zi.jpg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/39b4fb4846c99c1d41a4e015da0b60bc20160606-3908-37f5zi.jpg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/39b4fb4846c99c1d41a4e015da0b60bc20160606-3908-37f5zi.jpg[0]" -auto-orient -resize "300x300>" "C:/Users/aparna/AppData/Local/Temp/8e48f07d33afea86adda763b341f4ed720160606-3908-12awqsk"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/39b4fb4846c99c1d41a4e015da0b60bc20160606-3908-37f5zi.jpg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/39b4fb4846c99c1d41a4e015da0b60bc20160606-3908-37f5zi.jpg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/39b4fb4846c99c1d41a4e015da0b60bc20160606-3908-37f5zi.jpg[0]" -auto-orient -resize "100x100>" "C:/Users/aparna/AppData/Local/Temp/8e48f07d33afea86adda763b341f4ed720160606-3908-7eo1su"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (17.0ms)[0m  INSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["description", "the simpson"], ["image_file_name", "simpsons.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 33603], ["image_updated_at", "2016-06-06 09:08:00.940980"], ["user_id", 1], ["created_at", "2016-06-06 09:08:02.589438"], ["updated_at", "2016-06-06 09:08:02.589438"]]
+  [1m[36m (142.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/13
+Completed 302 Found in 2087ms (ActiveRecord: 160.2ms)
+
+
+Started GET "/pins/13" for ::1 at 2016-06-06 12:08:02 +0300
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mPin Load (0.0ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 793ms (Views: 786.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pins" for ::1 at 2016-06-06 12:08:06 +0300
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (0.0ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (47.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 869ms (Views: 867.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins/new" for ::1 at 2016-06-06 12:08:11 +0300
+Processing by PinsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.erb (6.0ms)
+  Rendered pins/new.html.erb within layouts/application (78.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 863ms (Views: 854.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pins" for ::1 at 2016-06-06 12:08:50 +0300
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WzYar+aqv+FOzopcYbFY0wpU//Lq6XrtMBLPWZubYH4AoTS97w+pfpdnGwzmmgpjcQBYhji2W90bvxubThAsiQ==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x8a79248 @tempfile=#<Tempfile:C:/Users/aparna/AppData/Local/Temp/RackMultipart20160606-3908-bi43vq.jpg>, @original_filename="20130618_205223.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"20130618_205223.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"no really, why worry?"}, "commit"=>"Create Pin"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/858267b1c8270d519a254cb5d0ebe88520160606-3908-zv8su0.jpg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/858267b1c8270d519a254cb5d0ebe88520160606-3908-zv8su0.jpg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/858267b1c8270d519a254cb5d0ebe88520160606-3908-zv8su0.jpg[0]" -auto-orient -resize "300x300>" "C:/Users/aparna/AppData/Local/Temp/5f216a09cd3e74ee489f2d244731809d20160606-3908-kg3l7r"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/858267b1c8270d519a254cb5d0ebe88520160606-3908-zv8su0.jpg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/858267b1c8270d519a254cb5d0ebe88520160606-3908-zv8su0.jpg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/858267b1c8270d519a254cb5d0ebe88520160606-3908-zv8su0.jpg[0]" -auto-orient -resize "100x100>" "C:/Users/aparna/AppData/Local/Temp/5f216a09cd3e74ee489f2d244731809d20160606-3908-2jtyss"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (17.0ms)[0m  INSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["description", "no really, why worry?"], ["image_file_name", "20130618_205223.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 2645786], ["image_updated_at", "2016-06-06 09:08:50.209068"], ["user_id", 1], ["created_at", "2016-06-06 09:08:54.016179"], ["updated_at", "2016-06-06 09:08:54.016179"]]
+  [1m[36m (165.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/14
+Completed 302 Found in 4405ms (ActiveRecord: 182.1ms)
+
+
+Started GET "/pins/14" for ::1 at 2016-06-06 12:08:54 +0300
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mPin Load (1.0ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 852ms (Views: 845.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pins/new" for ::1 at 2016-06-06 12:08:59 +0300
+Processing by PinsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.erb (6.0ms)
+  Rendered pins/new.html.erb within layouts/application (125.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 910ms (Views: 902.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/pins" for ::1 at 2016-06-06 12:09:43 +0300
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CzFnvS22jHnudPiq0vmOWup5OVUBv4dG42//fWMvIV9QpkmvJBOa5jfdafpV0tzqkS2eIdPgpnbIwiu/tqRtqA==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x82ce9f0 @tempfile=#<Tempfile:C:/Users/aparna/AppData/Local/Temp/RackMultipart20160606-3908-1cy7zu2.jpeg>, @original_filename="722012014808Followthisblogyouwillloveitonyourdashboard.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"722012014808Followthisblogyouwillloveitonyourdashboard.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"hee hee"}, "commit"=>"Create Pin"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/17367ed85bdf2bb07478fa42fc95f38a20160606-3908-1h8idt4.jpeg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/17367ed85bdf2bb07478fa42fc95f38a20160606-3908-1h8idt4.jpeg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/17367ed85bdf2bb07478fa42fc95f38a20160606-3908-1h8idt4.jpeg[0]" -auto-orient -resize "300x300>" "C:/Users/aparna/AppData/Local/Temp/e1a295786aecffc4fdec40ae46fe24be20160606-3908-1oluoat"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/17367ed85bdf2bb07478fa42fc95f38a20160606-3908-1h8idt4.jpeg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/17367ed85bdf2bb07478fa42fc95f38a20160606-3908-1h8idt4.jpeg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/17367ed85bdf2bb07478fa42fc95f38a20160606-3908-1h8idt4.jpeg[0]" -auto-orient -resize "100x100>" "C:/Users/aparna/AppData/Local/Temp/e1a295786aecffc4fdec40ae46fe24be20160606-3908-1m77fez"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (18.0ms)[0m  INSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["description", "hee hee"], ["image_file_name", "722012014808Followthisblogyouwillloveitonyourdashboard.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 34342], ["image_updated_at", "2016-06-06 09:09:43.510074"], ["user_id", 1], ["created_at", "2016-06-06 09:09:44.911981"], ["updated_at", "2016-06-06 09:09:44.911981"]]
+  [1m[36m (176.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/15
+Completed 302 Found in 1914ms (ActiveRecord: 194.1ms)
+
+
+Started GET "/pins/15" for ::1 at 2016-06-06 12:09:45 +0300
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mPin Load (0.0ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 795ms (Views: 788.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pins/new" for ::1 at 2016-06-06 12:09:50 +0300
+Processing by PinsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.erb (15.0ms)
+  Rendered pins/new.html.erb within layouts/application (109.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 942ms (Views: 933.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/pins" for ::1 at 2016-06-06 12:10:09 +0300
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4oncjFYfBPHxtqDJBnziw+vS5cz+e6V68dd8Rc2Xdyq5HvKeX7oSbigfMZmBV7BzkIZCuCwkhEraeqiHGBw73Q==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x8a89328 @tempfile=#<Tempfile:C:/Users/aparna/AppData/Local/Temp/RackMultipart20160606-3908-1o2iofw.jpg>, @original_filename="angular_momentum.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"angular_momentum.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"angular momentum"}, "commit"=>"Create Pin"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/4f26141d2c77ab0fd1e244b6640ed60220160606-3908-weojip.jpg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/4f26141d2c77ab0fd1e244b6640ed60220160606-3908-weojip.jpg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/4f26141d2c77ab0fd1e244b6640ed60220160606-3908-weojip.jpg[0]" -auto-orient -resize "300x300>" "C:/Users/aparna/AppData/Local/Temp/cd08522f29492da30cd44d7df3c2fa8020160606-3908-11bhqv0"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/4f26141d2c77ab0fd1e244b6640ed60220160606-3908-weojip.jpg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/4f26141d2c77ab0fd1e244b6640ed60220160606-3908-weojip.jpg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/4f26141d2c77ab0fd1e244b6640ed60220160606-3908-weojip.jpg[0]" -auto-orient -resize "100x100>" "C:/Users/aparna/AppData/Local/Temp/cd08522f29492da30cd44d7df3c2fa8020160606-3908-366my0"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (17.0ms)[0m  INSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["description", "angular momentum"], ["image_file_name", "angular_momentum.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 45338], ["image_updated_at", "2016-06-06 09:10:09.989326"], ["user_id", 1], ["created_at", "2016-06-06 09:10:11.417329"], ["updated_at", "2016-06-06 09:10:11.417329"]]
+  [1m[36m (129.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/16
+Completed 302 Found in 1811ms (ActiveRecord: 147.3ms)
+
+
+Started GET "/pins/16" for ::1 at 2016-06-06 12:10:11 +0300
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mPin Load (1.0ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 16]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 930ms (Views: 926.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pins" for ::1 at 2016-06-06 12:10:16 +0300
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (4.0ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (74.8ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 1001ms (Views: 996.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/pins/new" for ::1 at 2016-06-06 12:10:19 +0300
+Processing by PinsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/_form.html.erb (4.0ms)
+  Rendered pins/new.html.erb within layouts/application (84.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 974ms (Views: 961.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pins" for ::1 at 2016-06-06 12:10:35 +0300
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T9i7EJ4FlF9pwfN1Id1MR09kyTAj6PXtcEDShBHyq3kUT5UCl6CCwLBoYiWm9h73NDBuRPG31N1b7QZGxHnnjg==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x79b8c70 @tempfile=#<Tempfile:C:/Users/aparna/AppData/Local/Temp/RackMultipart20160606-3908-1bie9yo.jpg>, @original_filename="cool-horse-chair-mental-chains-physical.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"cool-horse-chair-mental-chains-physical.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"believe"}, "commit"=>"Create Pin"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/97ecd76183b13733e46ceeddd3fc144920160606-3908-zscd0v.jpg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/97ecd76183b13733e46ceeddd3fc144920160606-3908-zscd0v.jpg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/97ecd76183b13733e46ceeddd3fc144920160606-3908-zscd0v.jpg[0]" -auto-orient -resize "300x300>" "C:/Users/aparna/AppData/Local/Temp/21f18661cd51a44ce83b60516e6ba39e20160606-3908-x48wkr"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/97ecd76183b13733e46ceeddd3fc144920160606-3908-zscd0v.jpg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/97ecd76183b13733e46ceeddd3fc144920160606-3908-zscd0v.jpg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/97ecd76183b13733e46ceeddd3fc144920160606-3908-zscd0v.jpg[0]" -auto-orient -resize "100x100>" "C:/Users/aparna/AppData/Local/Temp/21f18661cd51a44ce83b60516e6ba39e20160606-3908-1oy6d88"
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (18.0ms)[0m  [1mINSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "believe"], ["image_file_name", "cool-horse-chair-mental-chains-physical.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 58394], ["image_updated_at", "2016-06-06 09:10:35.284543"], ["user_id", 1], ["created_at", "2016-06-06 09:10:36.949944"], ["updated_at", "2016-06-06 09:10:36.949944"]]
+  [1m[35m (108.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/17
+Completed 302 Found in 2093ms (ActiveRecord: 127.3ms)
+
+
+Started GET "/pins/17" for ::1 at 2016-06-06 12:10:37 +0300
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPin Load (1.0ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 17]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 904ms (Views: 896.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/pins/new" for ::1 at 2016-06-06 12:10:40 +0300
+Processing by PinsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/_form.html.erb (8.0ms)
+  Rendered pins/new.html.erb within layouts/application (90.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 946ms (Views: 937.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/pins" for ::1 at 2016-06-06 12:10:51 +0300
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DrLILmPJI804PocinfJP6DE65kSonFbWqDgs5keENWpVJeY8amw1UuGXFnIa2R1YSm5BMHrDd+aDlfgkkg95nQ==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x8a21e88 @tempfile=#<Tempfile:C:/Users/aparna/AppData/Local/Temp/RackMultipart20160606-3908-1or3v7b.jpg>, @original_filename="class divide in a capitalist society.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"class divide in a capitalist society.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"food for thought"}, "commit"=>"Create Pin"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/0625e150a122f5c06bb98bb077b4368720160606-3908-1lj448h.jpg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/0625e150a122f5c06bb98bb077b4368720160606-3908-1lj448h.jpg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/0625e150a122f5c06bb98bb077b4368720160606-3908-1lj448h.jpg[0]" -auto-orient -resize "300x300>" "C:/Users/aparna/AppData/Local/Temp/e2c1209e471fdf2fbc5b02a99a1d0dbd20160606-3908-7pmx1r"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/0625e150a122f5c06bb98bb077b4368720160606-3908-1lj448h.jpg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/0625e150a122f5c06bb98bb077b4368720160606-3908-1lj448h.jpg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/0625e150a122f5c06bb98bb077b4368720160606-3908-1lj448h.jpg[0]" -auto-orient -resize "100x100>" "C:/Users/aparna/AppData/Local/Temp/e2c1209e471fdf2fbc5b02a99a1d0dbd20160606-3908-gnwum2"
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (16.0ms)[0m  [1mINSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "food for thought"], ["image_file_name", "class_divide_in_a_capitalist_society.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 158069], ["image_updated_at", "2016-06-06 09:10:51.841764"], ["user_id", 1], ["created_at", "2016-06-06 09:10:53.917271"], ["updated_at", "2016-06-06 09:10:53.917271"]]
+  [1m[35m (207.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/18
+Completed 302 Found in 2574ms (ActiveRecord: 223.7ms)
+
+
+Started GET "/pins/18" for ::1 at 2016-06-06 12:10:54 +0300
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mPin Load (1.0ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 18]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 856ms (Views: 850.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pins" for ::1 at 2016-06-06 12:10:58 +0300
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (1.0ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (75.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 864ms (Views: 860.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/pins/new" for ::1 at 2016-06-06 12:11:01 +0300
+Processing by PinsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.erb (8.0ms)
+  Rendered pins/new.html.erb within layouts/application (145.1ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 982ms (Views: 974.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pins" for ::1 at 2016-06-06 12:11:36 +0300
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cPmRyl5oMHPniyOR6KiOin2K3l6Um+hxEumBaxi7gf8rbr/YV80m7D4issFvg9w6Bt55KkbEyUE5RFWpzTDNCA==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x7abe0f0 @tempfile=#<Tempfile:C:/Users/aparna/AppData/Local/Temp/RackMultipart20160606-3908-s96wd0.jpg>, @original_filename="ku-xlarge.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"ku-xlarge.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"never happens"}, "commit"=>"Create Pin"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/f7b5a200a82e078f190ac581a0955ff820160606-3908-1dj4o6q.jpg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/f7b5a200a82e078f190ac581a0955ff820160606-3908-1dj4o6q.jpg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/f7b5a200a82e078f190ac581a0955ff820160606-3908-1dj4o6q.jpg[0]" -auto-orient -resize "300x300>" "C:/Users/aparna/AppData/Local/Temp/3b4712d2400989c015ee9ed8ca0910e220160606-3908-13kfjzn"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/aparna/AppData/Local/Temp/f7b5a200a82e078f190ac581a0955ff820160606-3908-1dj4o6q.jpg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/aparna/AppData/Local/Temp/f7b5a200a82e078f190ac581a0955ff820160606-3908-1dj4o6q.jpg[0]"
+Command :: convert "C:/Users/aparna/AppData/Local/Temp/f7b5a200a82e078f190ac581a0955ff820160606-3908-1dj4o6q.jpg[0]" -auto-orient -resize "100x100>" "C:/Users/aparna/AppData/Local/Temp/3b4712d2400989c015ee9ed8ca0910e220160606-3908-19gbnr6"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (19.0ms)[0m  INSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["description", "never happens"], ["image_file_name", "ku-xlarge.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 127591], ["image_updated_at", "2016-06-06 09:11:36.813691"], ["user_id", 1], ["created_at", "2016-06-06 09:11:38.634233"], ["updated_at", "2016-06-06 09:11:38.634233"]]
+  [1m[36m (133.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/19
+Completed 302 Found in 2248ms (ActiveRecord: 152.1ms)
+
+
+Started GET "/pins/19" for ::1 at 2016-06-06 12:11:39 +0300
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mPin Load (0.0ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 842ms (Views: 835.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pins" for ::1 at 2016-06-06 12:11:43 +0300
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (2.0ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (104.9ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 973ms (Views: 968.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/pins/new" for ::1 at 2016-06-06 12:11:50 +0300
+Processing by PinsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.erb (4.0ms)
+  Rendered pins/new.html.erb within layouts/application (81.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 933ms (Views: 923.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins" for ::1 at 2016-06-06 12:12:18 +0300
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (1.0ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (83.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 1043ms (Views: 1038.4ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/pins" for ::1 at 2016-06-06 12:13:00 +0300
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (1.0ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "pins"
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (123.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 1036ms (Views: 993.5ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/pins" for ::1 at 2016-06-06 12:14:11 +0300
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (2.0ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 8 OFFSET 0
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (69.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 827ms (Views: 820.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/pins" for ::1 at 2016-06-06 12:18:27 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pins/index.html.erb within layouts/application (48.1ms)
+Completed 500 Internal Server Error in 458ms (ActiveRecord: 0.0ms)
+
+SyntaxError (c:/Users/aparna/Desktop/pinteresting/app/views/pins/index.html.erb:28: syntax error, unexpected tLABEL
+... renderer: BootstrapPagination: :Rails );@output_buffer.safe...
+...                               ^):
+  app/views/pins/index.html.erb:28: syntax error, unexpected tLABEL
+
+
+  Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (18.0ms)
+  Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (53.7ms)
+  Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (4489.7ms)
+  Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (3.0ms)
+  Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (4638.0ms)
+  Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (10621.3ms)
+
+
+Started GET "/pins" for ::1 at 2016-06-06 12:19:17 +0300
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (1.0ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 8 OFFSET 0[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "pins"
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (327.2ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+Completed 200 OK in 2715ms (Views: 2704.9ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/pins" for ::1 at 2016-06-06 12:20:14 +0300
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (1.0ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 8 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (88.1ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 1065ms (Views: 1060.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.self-7ff6fe85e27f659739db5e20c40a671db38da53d5d1d188744146682d79aebbe.css?body=1" for ::1 at 2016-06-06 12:20:15 +0300
+
+
+Started GET "/assets/pins.self-6053f032528571333a42930d5dc13c9fde1b233492c86e86abc02d150db7e602.css?body=1" for ::1 at 2016-06-06 12:20:15 +0300
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-06 12:20:15 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-06 12:20:16 +0300
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-06-06 12:20:16 +0300
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2016-06-06 12:20:16 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-06 12:20:16 +0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-06-06 12:20:16 +0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-06 12:20:16 +0300
+
+
+Started GET "/assets/pins.self-54e1d4bece446eaf41df0734b3bdda654f05d047f28e7bd08b22a4d623563854.js?body=1" for ::1 at 2016-06-06 12:20:16 +0300
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2016-06-06 12:20:16 +0300
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.self-c1d43d59c51c96f38689232f330c6de2816ec55a026ab1276dde2fbdf94b03d7.js?body=1" for ::1 at 2016-06-06 12:20:16 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-06-06 12:20:16 +0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2016-06-06 12:20:16 +0300
+
+
+Started GET "/pins" for ::1 at 2016-06-06 12:20:42 +0300
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (2.0ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 8 OFFSET 0[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "pins"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (70.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 863ms (Views: 859.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-06 12:20:44 +0300
+
+
+Started GET "/assets/bootstrap_and_customization.self-7ff6fe85e27f659739db5e20c40a671db38da53d5d1d188744146682d79aebbe.css?body=1" for ::1 at 2016-06-06 12:20:44 +0300
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-06-06 12:20:44 +0300
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2016-06-06 12:20:44 +0300
+
+
+Started GET "/assets/pins.self-6053f032528571333a42930d5dc13c9fde1b233492c86e86abc02d150db7e602.css?body=1" for ::1 at 2016-06-06 12:20:44 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-06 12:20:44 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-06 12:20:44 +0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-06-06 12:20:44 +0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-06 12:20:45 +0300
+
+
+Started GET "/assets/pins.self-54e1d4bece446eaf41df0734b3bdda654f05d047f28e7bd08b22a4d623563854.js?body=1" for ::1 at 2016-06-06 12:20:45 +0300
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2016-06-06 12:20:45 +0300
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.self-c1d43d59c51c96f38689232f330c6de2816ec55a026ab1276dde2fbdf94b03d7.js?body=1" for ::1 at 2016-06-06 12:20:45 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-06-06 12:20:45 +0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2016-06-06 12:20:45 +0300
+
+
+Started GET "/pins" for ::1 at 2016-06-06 12:21:06 +0300
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (1.0ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 8 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (68.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 833ms (Views: 828.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/pins.self-6053f032528571333a42930d5dc13c9fde1b233492c86e86abc02d150db7e602.css?body=1" for ::1 at 2016-06-06 12:21:08 +0300
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-06-06 12:21:08 +0300
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-06 12:21:08 +0300
+
+
+Started GET "/assets/bootstrap_and_customization.self-7ff6fe85e27f659739db5e20c40a671db38da53d5d1d188744146682d79aebbe.css?body=1" for ::1 at 2016-06-06 12:21:08 +0300
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2016-06-06 12:21:08 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-06 12:21:08 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-06 12:21:08 +0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-06-06 12:21:08 +0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-06 12:21:08 +0300
+
+
+Started GET "/assets/pins.self-54e1d4bece446eaf41df0734b3bdda654f05d047f28e7bd08b22a4d623563854.js?body=1" for ::1 at 2016-06-06 12:21:09 +0300
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2016-06-06 12:21:09 +0300
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.self-c1d43d59c51c96f38689232f330c6de2816ec55a026ab1276dde2fbdf94b03d7.js?body=1" for ::1 at 2016-06-06 12:21:09 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-06-06 12:21:09 +0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2016-06-06 12:21:09 +0300
+
+
+Started GET "/pins?page=2" for ::1 at 2016-06-06 12:21:20 +0300
+Processing by PinsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (1.0ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 8 OFFSET 8[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (42.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 916ms (Views: 912.3ms | ActiveRecord: 2.0ms)
